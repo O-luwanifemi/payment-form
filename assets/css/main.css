@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  max-width: 100vw;
+  font-size: 1.6rem;
+  position: relative;
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #153050da, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+  width: 68%;
+  padding: 1em;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border-top: 2px solid rgb(255, 217, 47);
+  border-bottom: 2px solid rgb(255, 217, 47); */
+  background-color: rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper > h2 {
+  color: #fff;
+  font-size: 1.9rem;
+  letter-spacing: .03em;
+  word-spacing: .18em;
+}
+
+.wrapper > form {
+  margin-top: 1em;
+  width: 100%;
+  border-radius: 5px;
+}
+
+form h4 {
+  color: rgba(255, 255, 255, 0.918);
+  font-size: 1.35rem;
+  text-transform: uppercase;
+}
+
+form > .input-group {
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.input-group > .input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: .8em;
+}
+
+.input-box > .name {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: rgba(255, 247, 180, 0.89);
+  background-color: transparent;
+  border-bottom: 1.3px solid rgba(255, 255, 255, 0.3);
+}
+
+.input-box > .name:focus,
+.input-box > .dob:focus {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.726);
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px
+}
+
+.input-box > i {
+  color: rgba(255, 255, 255, 0.541);
+  margin-left: -1em;
+  font-size: 1.4rem;
+}
+
+.input-box > h4 {
+  color: rgba(255, 255, 255, 0.918);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  width: 100% !important;
+  text-align: left;
+  margin-top: .3em;
+}
+
+.input-box > .dob {
+  background-color: transparent;
+  width: 60%;
+  margin-right: 7px;
+  border: none;
+  outline: none;
+  margin-top: .3em;
+  padding-bottom: 5px;
+  color: rgba(255, 247, 180, 0.89);
+  border-bottom: 1.3px solid rgba(255, 255, 255, 0.3);
+}
+
+.input-box > .dob:last-of-type {
+  margin-right: 0;
+}
+
+.dob::placeholder {
+  text-align: right;
+}
+
+.input-box > label[for="b1"],
+.input-box > label[for="b2"],
+.input-box > label[for="bc1"],
+.input-box > label[for="bc2"] {
+  margin-right: 6.5em;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: .3em;
+}
+
+.input-box > .radio {
+  margin: .2em .3em 0 0;
+  outline: none;
+  cursor: pointer;
+}
+
+#bc1 {
+  margin-right: 0;
+}
+
+.input-box > label[for="bc1"] {
+  margin-right: .5em;
+  width: 80%;
+}
+
+.input-box > label[for="b2"],
+.input-box > label[for="bc2"] {
+  margin-right: 0;
+}
+
+.input-group:nth-child(7) {
+  text-align: left;
+  width: 60%;
+}
+
+.input-box > input[type="tel"] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 5px;
+  color: rgba(255, 247, 180, 0.89);
+  border-bottom: 1.3px solid rgba(255, 255, 255, 0.3);
+}
+
+.input-box > select {
+  width: 35%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 5px;
+  color: rgba(255, 247, 180, 0.89);
+  border-bottom: 1.3px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+}
+
+.input-box select > option {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: rgba(255, 255, 255, 0.8);;
+}
+
+.input-box > button[type="submit"] {
+  width: 45%;
+  height: 3em;
+  margin-top: .8em;
+  color: #fff;
+  background-color: rgb(21, 148, 89);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(10, 66, 40);
+}
