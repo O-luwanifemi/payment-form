@@ -12,6 +12,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -22,6 +23,7 @@ html {
   height: 40px;
   border: none;
   outline: none;
+  font-size: 1.3rem;
   color: rgba(255, 247, 180, 0.89);
   background-color: transparent;
   border-bottom: 1.3px solid rgba(255, 255, 255, 0.3);
@@ -33,7 +35,7 @@ html {
 .input-box > label[for="bc2"] {
   margin-right: 6.5em;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-top: .3em;
@@ -51,7 +53,7 @@ body {
 }
 
 .wrapper {
-  width: 75%;
+  width: 85%;
   padding: 1.5em;
   text-align: center;
   position: fixed;
@@ -75,11 +77,12 @@ body {
   width: 100%;
 }
 
-form h4 {
+form > h4 {
   color: rgba(255, 255, 255, 0.849);
   font-size: 1.9rem;
   text-transform: uppercase;
-  margin-bottom: .4em;
+  margin-bottom: .2em;
+  background-color: darkcyan !important;
 }
 
 form > .input-group {
@@ -93,6 +96,15 @@ form > .input-group {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1em;
+}
+
+.input-box > .dob {
+  width: 30% !important;
+  margin-right: 10px !important;
+}
+
+.input-box > .dob:last-child {
+  margin-right: 0 !important;
 }
 
 .input-box > .name:focus,
@@ -131,11 +143,11 @@ form > .input-group {
 .input-box > h4 {
   color: rgba(255, 255, 255, 0.918);
   font-size: 1.3rem;
+  margin-top: .25em;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   width: 100% !important;
   text-align: left;
-  margin-top: .3em;
 }
 
 .input-box > .dob {
