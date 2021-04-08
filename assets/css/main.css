@@ -34,7 +34,7 @@ html {
 .input-box > label[for="bc1"],
 .input-box > label[for="bc2"] {
   margin-right: 6.5em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.3rem !important;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -166,7 +166,7 @@ form > .input-group {
 }
 
 .input-box > .radio {
-  margin: .2em .5em 0 0;
+  margin: .2em .3em 0 0;
   outline: none;
   cursor: pointer;
 }
@@ -178,7 +178,6 @@ form > .input-group {
   width: 80%;
   color: rgba(255, 255, 255, 0.5);
 }
-
 
 .input-box > label[for="b2"],
 .input-box > label[for="bc2"] {
