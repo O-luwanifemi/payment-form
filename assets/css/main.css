@@ -53,7 +53,7 @@ body {
 
 form > h4 {
   font-size: 1.4rem;
-  margin: 2em 0 .2em 0 !important;
+  margin: 1.2em 0 .2em 0 !important;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.685);
 }
@@ -213,7 +213,7 @@ form > .input-group {
 
 .input-group:nth-child(6) i {
   color: rgba(255, 255, 255, 0.25);
-  margin-left: -5em;
+  margin-left: -1em;
 }
 /* ------ -------------------------- ------ */
 
@@ -289,7 +289,7 @@ button[type="submit"]:hover {
 }
 
 /* XS screen */
- @media (min-width: 400px) and (max-width: 575px) {
+ @media (min-width: 350px) and (max-width: 575px) {
   .wrapper > form {
     width: 100%;
     max-width: 400px;
@@ -300,15 +300,73 @@ button[type="submit"]:hover {
  /*  SM screen  */
  @media (min-width: 576px) {
   .wrapper > h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+  
+  /* FORM SECTION */
+  form > h4 {
+    font-size: 1.6rem;
+    margin: 1em 0 .2em 0 !important;
+  }
+  
+  form > .input-group {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden !important;
   }
 
-  .wrapper > form {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+  /*  ------  COMMON INPUT STYLINGS  ------  */
+  .input-box > .name,
+  .input-box > .dob {
+    font-size: 1.4rem;
   }
- }
+  /* ------ -------------------------- ------ */
+
+  /* ------ GENERAL PLACEHOLDER STYLINGS ------ */
+  ::-webkit-input-placeholder {
+    font-size: 1.35rem;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 1.35rem;
+  }
+
+  ::placeholder {
+    font-size: 1.35rem;
+  }
+  /* ------ -------------------------- ------ */
+
+  /* ---- NTH:CHILD(4) --- FOR DOB & GENDER ---- */
+  .input-group:nth-child(4) h4,
+  .input-group:nth-child(5) h4 {
+    font-size: 1.4rem;
+  }
+
+  .input-group:nth-child(4) .radio {
+    right: -45px;
+  }
+  
+  .input-group:nth-child(4) label,
+  .input-group:nth-child(5) label {
+    font-size: 1.35rem;
+  }
+  /* ------ -------------------------- ------ */
+
+  /* ---- NTH:CHILD(5) --- FOR PAYMENT DETAILS ---- */
+  .input-group:nth-child(5) .radio {
+    right: -20px;
+  }
+
+  .input-group:nth-child(7) input[type="tel"],
+  .input-box > button[type="submit"] {
+    font-size: 1.4rem;
+  }
+}
+
+/* MD screen */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
 
 
 
