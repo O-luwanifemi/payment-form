@@ -288,6 +288,10 @@ button[type="submit"]:hover {
   border: 1px solid rgba(255, 255, 255, 0.479);
 }
 
+
+
+
+
 /* XS screen */
  @media (min-width: 350px) and (max-width: 575px) {
   .wrapper > form {
@@ -364,8 +368,21 @@ button[type="submit"]:hover {
 }
 
 /* MD screen */
-@media (min-width: 768px) and (max-width: 991px) {
-  
+@media (min-width: 992px) {
+  .wrapper > form {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .input-box > .name,
+  .input-box > .dob {
+    height: 32px;
+  }
+
+  .input-group:nth-child(7) select,
+  .input-group:nth-child(7) input[type="tel"] {
+    height: 25px;
+  }
 }
 
 
