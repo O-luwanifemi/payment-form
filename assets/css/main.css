@@ -48,7 +48,7 @@ body {
 
 /* FORM SECTION */
 .wrapper > form {
-  margin-top: 1.65em;
+  margin-top: 2em;
 }
 
 form > h4 {
@@ -294,12 +294,15 @@ button[type="submit"]:hover {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    /* background-color: sandybrown; */
   }
  }
 
  /*  SM screen  */
  @media (min-width: 576px) {
+  .wrapper > h2 {
+    font-size: 1.8rem;
+  }
+
   .wrapper > form {
     width: 100%;
     max-width: 400px;
