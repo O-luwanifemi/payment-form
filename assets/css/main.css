@@ -26,7 +26,7 @@ body {
 }
 
 .wrapper {
-  width: 95% !important;
+  width: 90% !important;
   min-width: 350px !important;
   max-width: 500px !important;
   padding: 1.2em;
@@ -168,7 +168,7 @@ form > .input-group {
 .input-group:nth-child(4) .radio {
   cursor: pointer;
   position: relative;
-  right: -12px;
+  right: -18px;
   top: 1px;
 }
 
@@ -213,7 +213,7 @@ form > .input-group {
 
 .input-group:nth-child(6) i {
   color: rgba(255, 255, 255, 0.25);
-  margin-left: -1em;
+  margin-left: -5em;
 }
 /* ------ -------------------------- ------ */
 
@@ -288,7 +288,24 @@ button[type="submit"]:hover {
   border: 1px solid rgba(255, 255, 255, 0.479);
 }
 
+/* XS screen */
+ @media (min-width: 400px) and (max-width: 575px) {
+  .wrapper > form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    /* background-color: sandybrown; */
+  }
+ }
 
+ /*  SM screen  */
+ @media (min-width: 576px) {
+  .wrapper > form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+ }
 
 
 
