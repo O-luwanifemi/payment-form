@@ -48,12 +48,12 @@ body {
 
 /* FORM SECTION */
 .wrapper > form {
-  margin-top: 4em;
+  margin-top: 1.65em;
 }
 
 form > h4 {
   font-size: 1.4rem;
-  margin-bottom: .2em;
+  margin: 2em 0 .2em 0 !important;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.685);
 }
