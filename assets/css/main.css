@@ -34,7 +34,7 @@ html {
 .input-box > label[for="bc1"],
 .input-box > label[for="bc2"] {
   margin-right: 6.5em;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.3rem !important;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -67,22 +67,21 @@ body {
 .wrapper > h2 {
   color: #fff;
   font-size: 2.2rem;
-  letter-spacing: .03em;
-  word-spacing: .18em;
+  letter-spacing: .05em;
+  word-spacing: .15em;
 }
 
 /* FORM SECTION */
 .wrapper > form {
-  margin-top: 2em;
+  margin-top: 1.65em;
   width: 100%;
 }
 
 form > h4 {
-  color: rgba(255, 255, 255, 0.849);
-  font-size: 1.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.65rem;
   text-transform: uppercase;
   margin-bottom: .2em;
-  background-color: darkcyan !important;
 }
 
 form > .input-group {
@@ -94,7 +93,6 @@ form > .input-group {
 .input-group > .input-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 1em;
 }
 
@@ -129,25 +127,32 @@ form > .input-group {
 
 ::placeholder {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 1.5px
+  letter-spacing: 1.5px;
+}
+
+.dob::-webkit-input-placeholder,
+.dob:-ms-input-placeholder{
+  color: rgba(255, 255, 255, 0.247);
 }
 
 /* THE ICONS */
 .input-box > i {
-  color: rgba(255, 255, 255, 0.541);
+  color: rgba(255, 255, 255, 0.25);
   margin-left: -1em;
 }
 
 .input-box > h4 {
   color: rgba(255, 255, 255, 0.918);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 300;
   margin-top: .25em;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   width: 100% !important;
   text-align: left;
+  margin-right: 24px;
 }
 
 .input-box > .dob {
@@ -155,32 +160,42 @@ form > .input-group {
   margin-right: 7px;
 }
 
-.input-box > .dob:last-of-type {
-  margin-right: 0;
-}
-
 .dob::placeholder {
-  text-align: right;
+  color: rgba(255, 255, 255, 0.247);
+  text-align: center;
 }
 
 .input-box > .radio {
-  margin: .2em .3em 0 0;
+  margin: .2em .5em 0 0;
   outline: none;
   cursor: pointer;
 }
 
-.input-box > label[for="bc1"] {
-  margin-right: .5em;
-  width: 80%;
+#b1 {
+  margin-left: -273px;
 }
 
+.input-box > label[for="b1"] {
+  margin-right: 100px;
+}
+
+.input-box > label[for="bc1"] {
+  position: relative;
+  left: -10px;  
+  margin-right: .5em;
+  width: 80%;
+  color: rgba(255, 255, 255, 0.5);
+}
+git 
 .input-box > label[for="b2"],
 .input-box > label[for="bc2"] {
   margin-right: 0;
+  color: rgba(255, 255, 255, 0.5) !important;
+  cursor: pointer;
 }
 
 .input-group:nth-child(7) {
-  text-align: left;
+  text-align: center;
   width: 60%;
 }
 
@@ -194,13 +209,17 @@ form > .input-group {
 }
 
 .input-box > select {
-  width: 45%;
+  width: 50%;
   background-color: transparent;
   border: none;
   outline: none;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   color: rgba(255, 247, 180, 0.89);
   border-bottom: 1.3px solid rgba(255, 255, 255, 0.3);
+}
+
+.input-box > select:first-child {
+  margin-right: 1.5em;
 }
 
 .input-box select > option {
@@ -226,3 +245,23 @@ form > .input-group {
 button[type="submit"]:hover {
   background-color: rgb(10, 66, 40);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small screen: @media (min-width: 576px) and (max-width: 767px).
+Medium screen: @media (min-width: 768px) and (max-width: 991px).
+Large screen: @media (min-width: 992px) and (max-width: 1199px).
+Extra-large screen: @media (min-width: 1200px). */
